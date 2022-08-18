@@ -93,3 +93,23 @@ SoftSpiDriver<SOFT_MISO_PIN, SOFT_MOSI_PIN, SOFT_SCK_PIN> softSpi;
 
 see in the lower left edge - DFU Pins = 3.3V and P1/DFU (=BOOT)
 ![Pyboard Backside Pinout](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/Pyboard_v1_1_Back.jpg?raw=true)
+
+<br>
+
+## Main features of the hardware
+
+- STM32F405RG(T6) microcontroller<br>
+- 168 MHz Cortex M4 CPU with hardware floating point<br>
+- 1024KiB flash ROM and 192KiB RAM<br>
+- Micro USB connector for power and serial communication<br>
+- Micro SD card slot, supporting standard and high capacity SD cards<br>
+- 3-axis accelerometer (MMA7660)<br>
+- Real time clock with optional battery backup<br>
+- 24 GPIO on left and right edges and 5 GPIO on bottom row, plus LED and switch GPIO available on bottom row<br>
+- 3x 12-bit analog to digital converters, available on 16 pins, 4 with analog ground shielding<br>
+- 2x 12-bit digital to analog (DAC) converters, available on pins X5 and X6<br>
+- 4 LEDs (red, green, yellow and blue)<br>
+- 1 reset and 1 user switch<br>
+- On-board 3.3V LDO voltage regulator, capable of supplying up to 250mA, input voltage range 3.6V to 16V<br>
+- DFU bootloader in ROM for easy upgrading of firmware<br>
+- The two mounting tabs on the pyboard have perforations so that you can snap them off cleanly if needed.<br>
