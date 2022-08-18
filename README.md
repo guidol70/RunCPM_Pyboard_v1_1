@@ -1,9 +1,9 @@
 # RunCPM_Pyboard_v1_1
-RunCPM Port for the Pyboard v1.1 STM32F405RGT6
+RunCPM Port for the Pyboard v1.1 - STM32F405RGT6 CPU
 
 ![RunCPM_Pyboard_BootUpScreen](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/RunCPM_Pyboard_v1_1.jpg?raw=true)
 
-## Links
+## URLs / Links
 
 Original Pyboard v1.1 at the Micropython-Store<br>
 https://store.micropython.org/product/PYBv1.1#_
@@ -14,25 +14,27 @@ https://store.micropython.org/media/products/PYBv1_1-E.jpg
 My start around 2 years ago (October 2020)<br>
 https://forum.micropython.org/viewtopic.php?f=6&t=9219
 
-First Tutorial from User @apples in forum.micropython.org<br>
+First Tutorial from User @apples in the forum of micropython.org<br>
 https://forum.micropython.org/viewtopic.php?f=6&t=9496
 
 Arduino_Core_STM32 v2.3.0 (STM32Duino)<br>
 https://github.com/stm32duino/Arduino_Core_STM32
 
-STM32CubeProgrammer v2.11.0<br>
+![STM32Duino](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/BoardsManager_STM32Duino.jpg?raw=true)
+
+STM32CubeProgrammer v2.11.0 ( I used the Win64 version )<br>
 https://www.st.com/en/development-tools/stm32cubeprog.html
 <br>
 
 ## Files changed
 
-SdFat Arduino Library v2.20
+SdFat Arduino Library v2.20 ( SdFatConfig.h )
 ```
 C:\Users\guido\Documents\Arduino\libraries\SdFat\src\SdFatConfig.h
 ```
-![SDFatConfig_h](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/SdFatConfig_h_changes.jpg?raw=true)
+![SdFatConfig_h](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/SdFatConfig_h_changes.jpg?raw=true)
 
-STM32Duino Core v2.3.0
+STM32Duino Core v2.3.0 ( variant_generic.h )
 ```
 C:\Users\guido\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32F4xx\F405RGT_F415RGT\variant_generic.h
 ```
@@ -40,14 +42,14 @@ C:\Users\guido\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm3
 
 <br>
 
-## File not needed to be changed 
+## File not needed to be changed anymore
 
 ("old" Tutorial tells something about change 
 ```
 FLASH_LATENCY_5
 ```
 
-STM32Duino Core v2.3.0
+STM32Duino Core v2.3.0 ( variant_generic.cpp )
 ```
 C:\Users\guido\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32F4xx\F405RGT_F415RGT\variant_generic.cpp
 ```
@@ -66,6 +68,56 @@ connect 3.3V & BOOT-Pin and press RST (Reset) while powered on via USB<br>
 The green, yellow and blue LED will lit up low in DFU-Mode (on my clone board)
 ![DFU-Mode 1](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/Pyboard_v1_1_DFU_FullBoard.jpg?raw=true)
 ![DFU-Mode 2](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/Pyboard_v1_1_DFU.jpg?raw=true)
+
+STM32CubeProgrammer DFU Upload-Log
+```
+Sketch uses 110720 bytes (10%) of program storage space. Maximum is 1048576 bytes.
+Global variables use 71628 bytes (54%) of dynamic memory, leaving 59444 bytes for local variables. Maximum is 131072 bytes.
+C:\Users\guido\AppData\Local\Arduino15\packages\STMicroelectronics\tools\STM32Tools\2.1.1/win/busybox.exe sh C:\Users\guido\AppData\Local\Arduino15\packages\STMicroelectronics\tools\STM32Tools\2.1.1/stm32CubeProg.sh 2 C:\Users\guido\AppData\Local\Temp\arduino_build_442781/RunCPM_PyBoard11.ino.bin -g 
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.11.0                  
+      -------------------------------------------------------------------
+
+
+
+USB speed   : Full Speed (12MBit/s)
+Manuf. ID   : STMicroelectronics
+Product ID  : STM32  BOOTLOADER
+SN          : 316D386B3436
+DFU protocol: 1.1
+Board       : --
+Device ID   : 0x0413
+Device name : STM32F405xx/F407xx/F415xx/F417xx
+Flash size  : 1 MBytes (default)
+Device type : MCU
+Revision ID : --  
+Device CPU  : Cortex-M4
+
+
+Memory Programming ...
+Opening and parsing file: RunCPM_PyBoard11.ino.bin
+  File          : RunCPM_PyBoard11.ino.bin
+  Size          : 108.54 KB 
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 4]
+erasing sector 0000 @: 0x08000000 done
+erasing sector 0001 @: 0x08004000 done
+erasing sector 0002 @: 0x08008000 done
+erasing sector 0003 @: 0x0800c000 done
+erasing sector 0004 @: 0x08010000 done
+Download in Progress:
+
+
+File download complete
+Time elapsed during download operation: 00:00:04.627
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+Start operation achieved successfully
+```
 
 <br>
 
