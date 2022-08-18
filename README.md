@@ -8,6 +8,9 @@ RunCPM Port for the Pyboard v1.1 STM32F405RGT6
 Original Pyboard v1.1 at the Micropython-Store<br>
 https://store.micropython.org/product/PYBv1.1#_
 
+Pyboard v1.1 Pinout-Picture
+https://store.micropython.org/media/products/PYBv1_1-E.jpg
+
 My start around 2 years ago (October 2020)<br>
 https://forum.micropython.org/viewtopic.php?f=6&t=9219
 
@@ -83,3 +86,10 @@ SoftSpiDriver<SOFT_MISO_PIN, SOFT_MOSI_PIN, SOFT_SCK_PIN> softSpi;
 ## STM32F405RGT6-CPU on the Pyboard v1.1
 
 ![STM32F405RGT6-CPU](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/STM32F405RGT6_CPU.jpg?raw=true)
+
+<br>
+
+## Backside of the Pyboard v1.1
+
+see in the lower left edge - DFU Pins = 3.3V and P1/DFU (=BOOT)
+![Pyboard Backside Pinout](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/Pyboard_v1_1_Back.jpg?raw=true)
