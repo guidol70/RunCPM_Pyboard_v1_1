@@ -1,4 +1,4 @@
-# RunCPM_Pyboard_v1_1
+# RunCPM_STM32_Pyboard_v1_1
 RunCPM Port for the Pyboard v1.1 - STM32F405RGT6 CPU
 
 ![RunCPM_Pyboard_BootUpScreen](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/RunCPM_v6_7_Pyboard_v1_1.jpg?raw=true)
