@@ -1,7 +1,7 @@
 # RunCPM_Pyboard_v1_1
 RunCPM Port for the Pyboard v1.1 - STM32F405RGT6 CPU
 
-![RunCPM_Pyboard_BootUpScreen](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/RunCPM_v6_0_Pyboard_v1_1.jpg?raw=true)
+![RunCPM_Pyboard_BootUpScreen](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/RunCPM_v6_7_Pyboard_v1_1.jpg?raw=true)
 
 ## URLs / Links
 
@@ -17,7 +17,8 @@ https://forum.micropython.org/viewtopic.php?f=6&t=9219
 First Tutorial from User @apples in the forum of micropython.org<br>
 https://forum.micropython.org/viewtopic.php?f=6&t=9496
 
-Arduino_Core_STM32 v2.3.0 (STM32Duino)<br>
+Arduino_Core_STM32 v2.7.1 (STM32Duino) for Arduino IDE v1.8.19<br>
+Arduino_Core_STM32 v2.9.0 (STM32Duino) for Arduino IDE v2.xx<br>
 https://github.com/stm32duino/Arduino_Core_STM32
 
 ![STM32Duino](https://github.com/guidol70/RunCPM_Pyboard_v1_1/raw/main/pictures/BoardsManager_STM32Duino.jpg?raw=true)
